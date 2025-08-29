@@ -1,7 +1,7 @@
 <?php
 // ticket_venta.php
 
-include 'conexion.php';
+include 'conexion/conexion.php';
 
 if (isset($_GET['id'])) {
     $venta_id = $_GET['id'];
