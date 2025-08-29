@@ -1,6 +1,6 @@
 <?php
 // Incluir archivo de conexión
-include 'conexion.php';
+include 'conexion/conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['codigo_barras'], $_POST['proveedor'], $_POST['cantidad'])) {
     $codigo_barras = $_POST['codigo_barras'];
