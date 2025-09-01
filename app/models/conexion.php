@@ -15,6 +15,7 @@ if (!$conexion) {
 // Opcional: Configuración de caracteres UTF-8
 mysqli_set_charset($conexion, "utf8");
 
+// Otras configuraciones si las necesitas
 
 ?>
 
