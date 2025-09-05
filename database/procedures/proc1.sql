@@ -22,5 +22,3 @@ BEGIN
 END //
 DELIMITER ;;
 
-
-CALL mostrarproductos;
