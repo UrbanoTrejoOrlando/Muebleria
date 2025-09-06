@@ -1,7 +1,6 @@
 
 DROP PROCEDURE IF EXISTS mostrarproductos;
 
-DELIMITER //
 
 CREATE PROCEDURE mostrarproductos()
 BEGIN
