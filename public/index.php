@@ -59,11 +59,11 @@
                             echo "<td class='px-4 py-2 font-medium text-gray-800'>" . $fila[1] . "</td>";
                             echo "<td class='px-4 py-2 text-gray-600'>" . $fila[2] . "</td>";
                             echo "<td class='px-4 py-2 font-semibold text-green-600'>$" . $fila[3] . "</td>";
-                            echo "<td class='px-4 py-2'>" . $fila[4] . "</td>";
                             echo "<td class='px-4 py-2'>" . $fila[5] . "</td>";
                             echo "<td class='px-4 py-2'>" . $fila[6] . "</td>";
                             echo "<td class='px-4 py-2'>" . $fila[7] . "</td>";
                             echo "<td class='px-4 py-2'>" . $fila[8] . "</td>";
+                            echo "<td class='px-4 py-2'>" . $fila[9] . "</td>";
 
 
 
