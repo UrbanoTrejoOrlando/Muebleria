@@ -3,13 +3,21 @@ include 'conexion/conexion.php';
 session_start();
 
 $codigo_barras = $_POST['codigo_barras'];
-$cantidad = $_POST['cantidad'];
+$cantidad = intval($_POST['cantidad']); // 🔒 aseguramos que sea entero
+
+if ($cantidad <= 0) {
+    // Si la cantidad no es válida, redirigir de vuelta a la tienda
+    header('Location: index.php');
+    exit;
+}
 
 if (!isset($_SESSION['carrito'])) {
-    $_SESSION['carrito'] = array();
+    $_SESSION['carrito'] = [];
 }
 
 $producto_encontrado = false;
+
+// Buscar si ya está en el carrito
 foreach ($_SESSION['carrito'] as &$producto) {
     if ($producto['codigo_barras'] == $codigo_barras) {
         $producto['cantidad'] += $cantidad;
@@ -18,10 +26,14 @@ foreach ($_SESSION['carrito'] as &$producto) {
     }
 }
 
+// Si no estaba, agregarlo
 if (!$producto_encontrado) {
-    $_SESSION['carrito'][] = array('codigo_barras' => $codigo_barras, 'cantidad' => $cantidad);
+    $_SESSION['carrito'][] = [
+        'codigo_barras' => $codigo_barras,
+        'cantidad' => $cantidad
+    ];
 }
 
-header('Location: index.php');
+header('Location: /public/carrito.php');
+exit;
 ?>
-
