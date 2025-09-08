@@ -1,13 +1,13 @@
 <?php
-include 'conexion/conexion.php';
 session_start();
+include '../models/conexion.php'; // Ruta corregida
 
 $codigo_barras = $_POST['codigo_barras'];
 $cantidad = intval($_POST['cantidad']); // 🔒 aseguramos que sea entero
 
 if ($cantidad <= 0) {
     // Si la cantidad no es válida, redirigir de vuelta a la tienda
-    header('Location: index.php');
+    header('Location: ../public/index.php');
     exit;
 }
 
@@ -34,6 +34,7 @@ if (!$producto_encontrado) {
     ];
 }
 
-header('Location: /public/carrito.php');
+// 🚀 Ahora redirige directo al carrito
+header('Location: ../public/carrito.php');
 exit;
 ?>
