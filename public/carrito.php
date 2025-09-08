@@ -1,6 +1,6 @@
 <?php
-include '../app/models/conexion.php';
 session_start();
+include 'app/models/conexion.php'; // Ruta corregida
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cliente_id'])) {
     $cliente_id = $_POST['cliente_id'];
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cliente_id'])) {
     // Limpiar el carrito
     unset($_SESSION['carrito']);
 
-    header('Location: /public/index.php');
+    header('Location: index.php');
     exit();
 }
 
@@ -58,67 +58,88 @@ $resultado_clientes = mysqli_query($conexion, $query_clientes);
 <html>
 <head>
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="container">
-    <h1>Carrito de Compras</h1>
-    <table class="cart-table">
-        <tr>
-            <th>Código de Barras</th>
-            <th>Nombre</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
-        </tr>
-        <?php
-        $total = 0;
-        foreach ($_SESSION['carrito'] as $producto) {
-            $codigo_barras = $producto['codigo_barras'];
-            $cantidad = $producto['cantidad'];
+<body class="bg-gray-100 min-h-screen">
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Carrito de Compras</h1>
+    
+    <div class="overflow-x-auto bg-white rounded-xl shadow-lg p-4 mb-6">
+        <table class="min-w-full border-collapse">
+            <thead>
+                <tr class="bg-blue-500 text-white">
+                    <th class="px-4 py-2 text-left">Código de Barras</th>
+                    <th class="px-4 py-2 text-left">Nombre</th>
+                    <th class="px-4 py-2 text-left">Cantidad</th>
+                    <th class="px-4 py-2 text-left">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <?php
+                $total = 0;
+                if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0) {
+                    foreach ($_SESSION['carrito'] as $producto) {
+                        $codigo_barras = $producto['codigo_barras'];
+                        $cantidad = $producto['cantidad'];
 
-            // Obtener información del producto
-            $query_producto = "SELECT nombre, precio FROM productos WHERE codigo_barras = '$codigo_barras'";
-            $resultado_producto = mysqli_query($conexion, $query_producto);
-            $fila_producto = mysqli_fetch_assoc($resultado_producto);
+                        // Obtener información del producto
+                        $query_producto = "SELECT nombre, precio FROM productos WHERE codigo_barras = '$codigo_barras'";
+                        $resultado_producto = mysqli_query($conexion, $query_producto);
+                        $fila_producto = mysqli_fetch_assoc($resultado_producto);
 
-            $nombre = $fila_producto['nombre'];
-            $precio = $fila_producto['precio'];
-            $subtotal = $precio * $cantidad;
-            $total += $subtotal;
+                        $nombre = $fila_producto['nombre'];
+                        $precio = $fila_producto['precio'];
+                        $subtotal = $precio * $cantidad;
+                        $total += $subtotal;
 
-            echo "<tr>";
-            echo "<td>$codigo_barras</td>";
-            echo "<td>$nombre</td>";
-            echo "<td>$cantidad</td>";
-            echo "<td>$subtotal</td>";
-            echo "</tr>";
-        }
-        ?>
-        <tr>
-            <td colspan="3">Total</td>
-            <td><?php echo $total; ?></td>
-        </tr>
-    </table>
-    <form action="finalizar_compra.php" method="POST">
-        <label for="cliente_id">Seleccionar Cliente:</label>
-        <select name="cliente_id" id="cliente_id">
-            <?php
-            while ($cliente = mysqli_fetch_assoc($resultado_clientes)) {
-                echo "<option value='" . $cliente['id_cliente'] . "'>" . $cliente['nombre'] . "</option>";
-            }
-            ?>
-        </select>
-        <input type="submit" class="btn btn-secondary" value="Finalizar Compra">
+                        echo "<tr class='hover:bg-gray-50'>";
+                        echo "<td class='px-4 py-2'>$codigo_barras</td>";
+                        echo "<td class='px-4 py-2 font-medium'>$nombre</td>";
+                        echo "<td class='px-4 py-2'>$cantidad</td>";
+                        echo "<td class='px-4 py-2 font-semibold text-green-600'>$$subtotal</td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='4' class='px-4 py-4 text-center text-gray-500'>No hay productos en el carrito.</td></tr>";
+                }
+                ?>
+                <tr class="bg-gray-100 font-bold">
+                    <td colspan="3" class="px-4 py-2 text-right">Total</td>
+                    <td class="px-4 py-2 text-green-600">$<?php echo $total; ?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <?php if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0): ?>
+    <form action="carrito.php" method="POST" class="mb-4 p-4 bg-white rounded-xl shadow-lg">
+        <label for="cliente_id" class="block text-sm font-medium text-gray-700 mb-2">Seleccionar Cliente:</label>
+        <div class="flex items-center">
+            <select name="cliente_id" id="cliente_id" class="border rounded px-3 py-2 mr-4 flex-grow">
+                <?php
+                while ($cliente = mysqli_fetch_assoc($resultado_clientes)) {
+                    echo "<option value='" . $cliente['id_cliente'] . "'>" . $cliente['nombre'] . "</option>";
+                }
+                ?>
+            </select>
+            <input type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition cursor-pointer" value="Finalizar Compra">
+        </div>
     </form>
-    <a href="index.php" type="button" class="btn btn-secondary">Seguir Comprando</a>
-    <form action="cancelar_venta.php" method="POST">
-        <input type="submit" class="btn btn-secondary" value="Cancelar Venta">
-    </form>
+    <?php endif; ?>
+    
+    <div class="flex space-x-4">
+        <a href="index.php" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition">Seguir Comprando</a>
+        
+        <?php if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0): ?>
+        <form action="app/controllers/cancelar_venta.php" method="POST" class="inline">
+            <input type="submit" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition cursor-pointer" value="Cancelar Venta">
+        </form>
+        <?php endif; ?>
+    </div>
 </div>
 </body>
 </html>
 <?php
 mysqli_close($conexion);
 ?>
-
