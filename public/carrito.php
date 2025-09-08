@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cliente_id'])) {
     // Limpiar el carrito
     unset($_SESSION['carrito']);
 
-    header('Location: index.php');
+    header('Location: /public/index.php');
     exit();
 }
 
