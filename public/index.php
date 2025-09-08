@@ -69,12 +69,12 @@
 
                             // Acciones
                             echo "<td class='px-4 py-2 text-center space-y-2'>";
-                            echo "<form action='../app/controllers/agregar_carrito.php' method='POST' class='inline-block' onsubmit=\"return validarCantidad(this.cantidad.value, " . $fila[4] . ", " . $fila[5] . ", " . $fila[6] . ")\">";
+                            echo "<form action='/app/controllers/agregar_carrito.php' method='POST' class='inline-block' onsubmit=\"return validarCantidad(this.cantidad.value, " . $fila[4] . ", " . $fila[5] . ", " . $fila[6] . ")\">";
                             echo "<input type='number' name='cantidad' value='1' min='1' max='" . $fila[4] . "' required class='w-20 border rounded px-2 py-1'>";
                             echo "<input type='hidden' name='codigo_barras' value='" . $fila[0] . "'>";
                             echo "<button type='submit' class='ml-2 px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600 transition'>Agregar</button>";
                             echo "</form>";
-                            echo "<a href='app/controllers/comprar.php?codigo_barras=" . $fila[0] . "' class='block mt-2 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition'>Comprar</a>";
+                            echo "<a href='/app/controllers/comprar.php?codigo_barras=" . $fila[0] . "' class='block mt-2 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition'>Comprar</a>";
                             echo "</td>";
 
                             echo "</tr>";
