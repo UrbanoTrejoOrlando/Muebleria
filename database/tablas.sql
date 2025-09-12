@@ -102,7 +102,6 @@ CREATE TABLE detalle_compra (
 
 
 
-CREATE TABLE Orlando (
     id INT PRIMARY KEY NOT NULL,
     nombre VARCHAR(255) NOT NULL,
     imagen  VARCHAR(255) NOT NULL
