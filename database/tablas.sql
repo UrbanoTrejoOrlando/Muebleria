@@ -104,4 +104,3 @@ CREATE TABLE detalle_compra (
 
 
 
-(3, 'Imagen 3', 'sofas/sofa_cuero.png');
