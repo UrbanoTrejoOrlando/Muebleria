@@ -71,7 +71,6 @@ CREATE TABLE detalle_venta (
 );
 
 
--- Tabla de notas de remisión
 CREATE TABLE notas_remision (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_venta INT,
