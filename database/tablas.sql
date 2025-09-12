@@ -18,7 +18,6 @@ CREATE TABLE materiales (
     nombre VARCHAR(255) NOT NULL
 );
 
--- Tabla de productos
 CREATE TABLE productos (
     codigo_barras VARCHAR(13) PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
