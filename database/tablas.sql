@@ -102,7 +102,6 @@ CREATE TABLE detalle_compra (
 
 
 
-    nombre VARCHAR(255) NOT NULL,
     imagen  VARCHAR(255) NOT NULL
 
 );
