@@ -79,7 +79,6 @@ CREATE TABLE notas_remision (
     FOREIGN KEY (id_venta) REFERENCES ventas(id_venta)
 );
 
---Tabla Proveedor
 CREATE TABLE proveedores (
     id_proveedor INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL
