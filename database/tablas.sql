@@ -43,7 +43,6 @@ CREATE TABLE producto_material (
     FOREIGN KEY (material_id) REFERENCES materiales(id)
 );
 
--- Tabla de clientes
 CREATE TABLE clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
