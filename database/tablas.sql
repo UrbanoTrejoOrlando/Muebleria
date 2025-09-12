@@ -60,7 +60,6 @@ CREATE TABLE ventas (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
 );
 
--- Tabla de detalles de venta
 CREATE TABLE detalle_venta (
     id_detalle_venta INT AUTO_INCREMENT PRIMARY KEY,
     id_venta INT,
