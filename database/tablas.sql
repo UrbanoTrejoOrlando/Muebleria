@@ -1,3 +1,4 @@
+-- Tabla de marcas
 CREATE TABLE marcas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
