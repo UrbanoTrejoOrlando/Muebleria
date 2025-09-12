@@ -91,7 +91,6 @@ CREATE TABLE compras (
     FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor)
 );
 
--- Tabla Detalle Compra
 CREATE TABLE detalle_compra (
     id_detalle_compra INT AUTO_INCREMENT PRIMARY KEY,
     id_compra INT NOT NULL,
