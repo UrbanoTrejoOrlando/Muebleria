@@ -13,7 +13,6 @@ CREATE TABLE colores (
     nombre VARCHAR(255) NOT NULL
 );
 
--- Tabla de materiales
 CREATE TABLE materiales (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
