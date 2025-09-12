@@ -35,7 +35,6 @@ CREATE TABLE productos (
     FOREIGN KEY (color_id) REFERENCES colores(id)
 );
 
--- Tabla de relación producto_material
 CREATE TABLE producto_material (
     producto_codigo_barras VARCHAR(13),
     material_id INT,
