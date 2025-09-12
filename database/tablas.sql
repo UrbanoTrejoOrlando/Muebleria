@@ -52,7 +52,6 @@ CREATE TABLE clientes (
 );
 
 
--- Tabla de ventas
 CREATE TABLE ventas (
     id_venta INT AUTO_INCREMENT PRIMARY KEY,
     id_cliente INT,
