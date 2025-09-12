@@ -103,7 +103,6 @@ CREATE TABLE detalle_compra (
 
 
 
-);
 
 INSERT INTO Orlando (id, nombre, imagen) VALUES
 (1, 'Imagen 1', 'sofas/mueble_jardin.png'),
