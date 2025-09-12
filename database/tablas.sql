@@ -84,7 +84,6 @@ CREATE TABLE proveedores (
     nombre VARCHAR(100) NOT NULL
 );
 
--- Tabla Compras
 CREATE TABLE compras (
     id_compra INT AUTO_INCREMENT PRIMARY KEY,
     id_proveedor INT NOT NULL,
