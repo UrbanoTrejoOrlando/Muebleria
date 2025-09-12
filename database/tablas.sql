@@ -8,7 +8,6 @@ CREATE TABLE categorias (
     nombre VARCHAR(255) NOT NULL
 );
 
--- Tabla de colores
 CREATE TABLE colores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
