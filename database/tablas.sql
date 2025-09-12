@@ -3,7 +3,6 @@ CREATE TABLE marcas (
     nombre VARCHAR(255) NOT NULL
 );
 
--- Tabla de categorias
 CREATE TABLE categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
