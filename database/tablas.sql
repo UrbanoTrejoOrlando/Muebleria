@@ -104,7 +104,6 @@ CREATE TABLE detalle_compra (
 
 
 
-INSERT INTO Orlando (id, nombre, imagen) VALUES
 (1, 'Imagen 1', 'sofas/mueble_jardin.png'),
 (2, 'Imagen 2', 'sofas/sillas.png'),
 (3, 'Imagen 3', 'sofas/sofa_cuero.png');
