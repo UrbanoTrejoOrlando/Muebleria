@@ -1,4 +1,3 @@
-INSERT INTO marcas (nombre) VALUES ('Estilo Industrial');
 
 -----Tabla Categorias ----
 INSERT INTO categorias (nombre) VALUES ('Sillas');
