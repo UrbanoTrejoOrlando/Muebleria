@@ -1,4 +1,3 @@
-INSERT INTO categorias (nombre) VALUES ('Decoración');
 
 ---Tabla Colores------
 INSERT INTO colores (nombre) VALUES ('Blanco');
