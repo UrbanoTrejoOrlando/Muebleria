@@ -1,4 +1,3 @@
----- Tablas Marcas----
 INSERT INTO marcas (nombre) VALUES ('Muebles Modernos');
 INSERT INTO marcas (nombre) VALUES ('Clásicos del Hogar');
 INSERT INTO marcas (nombre) VALUES ('Estilo Rústico');
