@@ -1,4 +1,3 @@
-INSERT INTO marcas (nombre) VALUES ('Clásicos del Hogar');
 INSERT INTO marcas (nombre) VALUES ('Estilo Rústico');
 INSERT INTO marcas (nombre) VALUES ('Diseños Vanguardistas');
 INSERT INTO marcas (nombre) VALUES ('Elegancia Colonial');
