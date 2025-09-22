@@ -1,4 +1,3 @@
-INSERT INTO categorias (nombre) VALUES ('Escritorios');
 INSERT INTO categorias (nombre) VALUES ('Estanterías');
 INSERT INTO categorias (nombre) VALUES ('Muebles de Jardín');
 INSERT INTO categorias (nombre) VALUES ('Muebles Infantiles');
