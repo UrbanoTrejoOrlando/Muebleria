@@ -1,4 +1,3 @@
-
 -----Tabla Categorias ----
 INSERT INTO categorias (nombre) VALUES ('Sillas');
 INSERT INTO categorias (nombre) VALUES ('Mesas');
