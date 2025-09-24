@@ -1,4 +1,3 @@
-INSERT INTO colores (nombre) VALUES ('Beige');
 INSERT INTO colores (nombre) VALUES ('Azul');
 INSERT INTO colores (nombre) VALUES ('Verde');
 INSERT INTO colores (nombre) VALUES ('Rojo');
