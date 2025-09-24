@@ -1,4 +1,3 @@
-INSERT INTO materiales (nombre) VALUES ('Vidrio');
 INSERT INTO materiales (nombre) VALUES ('Acero');
 INSERT INTO materiales (nombre) VALUES ('Plástico');
 INSERT INTO materiales (nombre) VALUES ('Fibra natural');
