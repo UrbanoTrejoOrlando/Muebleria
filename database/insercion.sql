@@ -1,4 +1,3 @@
-INSERT INTO materiales (nombre) VALUES ('Piedra');
 
 --- Tabla Productos ---
 -- Producto 1
