@@ -1,4 +1,3 @@
-INSERT INTO colores (nombre) VALUES ('Amarillo');
 
 ---- Tabla Materiales ------
 INSERT INTO materiales (nombre) VALUES ('Madera');
