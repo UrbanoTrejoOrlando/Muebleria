@@ -1,4 +1,3 @@
-VALUES ('3456789012345', 'Sofá de cuero', 'Sofá de tres plazas en cuero genuino, confortable y elegante.', 500.00, 30, 3, 50, 3, 3, 8);
 
 -- Producto 4
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
