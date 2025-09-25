@@ -1,4 +1,3 @@
-INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('1234567890123', 'Silla de madera', 'Silla fabricada en madera sólida, ideal para interiores.', 50.00, 100, 10, 200, 1, 1, 1);
 
 -- Producto 2
