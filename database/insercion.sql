@@ -1,4 +1,3 @@
-
 -- Producto 5
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('5678901234567', 'Armario de roble', 'Armario con puertas correderas en roble, amplio espacio de almacenamiento.', 300.00, 25, 5, 60, 5, 5, 4);
