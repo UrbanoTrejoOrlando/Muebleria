@@ -1,4 +1,3 @@
-
 -- Ejemplo de inserción de proveedores
 INSERT INTO proveedores (nombre) VALUES
 ('Maderas del Bosque S.A.'),
