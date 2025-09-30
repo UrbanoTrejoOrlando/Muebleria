@@ -1,4 +1,3 @@
-('Luis Fernández', 'Camino 202, Ciudad', '555-3141', 'luis.fernandez@example.com');
 
 
 -- Ejemplo de inserción de proveedores
