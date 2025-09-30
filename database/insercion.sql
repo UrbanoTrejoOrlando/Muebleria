@@ -1,4 +1,3 @@
-VALUES ('0123456789012', 'Lámpara de pie', 'Lámpara de pie moderna en acero y tela, iluminación ambiental.', 80.00, 50, 5, 100, 10, 10, 1);
 
 
 
