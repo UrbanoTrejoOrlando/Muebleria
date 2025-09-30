@@ -1,4 +1,3 @@
-('Ana López', 'Boulevard 101, Ciudad', '555-1121', 'ana.lopez@example.com'),
 ('Luis Fernández', 'Camino 202, Ciudad', '555-3141', 'luis.fernandez@example.com');
 
 
