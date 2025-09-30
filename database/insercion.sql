@@ -1,4 +1,3 @@
-('Juan Pérez', 'Calle 123, Ciudad', '555-1234', 'urbanoorlando79@gmail.com'),
 ('María García', 'Avenida 456, Ciudad', '555-5678', 'orlandourbano170703@gmail.com'),
 ('Carlos Sánchez', 'Plaza 789, Ciudad', '555-9101', 'orlandourbanotrejo@gmail.com'),
 ('Ana López', 'Boulevard 101, Ciudad', '555-1121', 'ana.lopez@example.com'),
