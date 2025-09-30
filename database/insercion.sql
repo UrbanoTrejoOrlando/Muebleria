@@ -1,4 +1,3 @@
-
 INSERT INTO clientes (nombre, direccion, telefono, email) VALUES 
 ('Juan Pérez', 'Calle 123, Ciudad', '555-1234', 'urbanoorlando79@gmail.com'),
 ('María García', 'Avenida 456, Ciudad', '555-5678', 'orlandourbano170703@gmail.com'),
