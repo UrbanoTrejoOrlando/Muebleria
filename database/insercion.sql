@@ -1,4 +1,3 @@
-INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('9012345678901', 'Silla infantil', 'Silla de plástico para niños, colores brillantes y diseño ergonómico.', 30.00, 80, 10, 150, 9, 9, 9);
 
 -- Producto 10
