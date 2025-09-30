@@ -1,4 +1,3 @@
--- Producto 10
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('0123456789012', 'Lámpara de pie', 'Lámpara de pie moderna en acero y tela, iluminación ambiental.', 80.00, 50, 5, 100, 10, 10, 1);
 
