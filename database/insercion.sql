@@ -1,4 +1,3 @@
-('Maderas Finas del Norte, Ltda.'),
 ('Distribuidora de Madera Ecológica, S.A.'),
 ('Telas y Textiles Elegantes, S.A.'),
 ('Distribuidora de Telas Modernas, Ltda.'),
