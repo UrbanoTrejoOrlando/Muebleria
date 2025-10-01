@@ -1,4 +1,3 @@
-('Distribuidora de Madera Ecológica, S.A.'),
 ('Telas y Textiles Elegantes, S.A.'),
 ('Distribuidora de Telas Modernas, Ltda.'),
 ('Tapicerías del Sur, S.A. de C.V.'),
