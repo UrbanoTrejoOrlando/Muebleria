@@ -1,4 +1,3 @@
-('Tapicerías del Sur, S.A. de C.V.'),
 ('Metales Industriales S.A.'),
 ('Distribuidora de Componentes Metálicos del Este, Ltda.'),
 ('Ferretería y Metales S.A.'),
