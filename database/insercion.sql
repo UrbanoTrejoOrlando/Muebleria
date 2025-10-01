@@ -1,4 +1,3 @@
-('Distribuidora de Componentes Metálicos del Este, Ltda.'),
 ('Ferretería y Metales S.A.'),
 ('Accesorios para Muebles S.A.'),
 ('Distribuidora de Herrajes Fino, Ltda.'),
