@@ -1,4 +1,3 @@
-('Colchones y Descanso S.A.'),
 ('Distribuidora de Almohadas Ortopédicas, Ltda.'),
 ('Fabricante de Colchones de Lujo, S.A.'),
 ('Decoraciones Elegantes S.A.'),
