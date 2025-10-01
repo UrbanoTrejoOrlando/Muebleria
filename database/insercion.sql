@@ -1,5 +1,3 @@
-('Distribuidora de Herrajes Fino, Ltda.'),
-('Herrajes y Componentes Industriales S.A.'),
 ('Colchones y Descanso S.A.'),
 ('Distribuidora de Almohadas Ortopédicas, Ltda.'),
 ('Fabricante de Colchones de Lujo, S.A.'),
