@@ -1,4 +1,3 @@
-('Accesorios para Muebles S.A.'),
 ('Distribuidora de Herrajes Fino, Ltda.'),
 ('Herrajes y Componentes Industriales S.A.'),
 ('Colchones y Descanso S.A.'),
