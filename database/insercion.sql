@@ -1,4 +1,3 @@
-INSERT INTO marcas (nombre) VALUES ('Innovación Urbana');
 INSERT INTO marcas (nombre) VALUES ('Diseños Contemporáneos');
 INSERT INTO marcas (nombre) VALUES ('Estilo Industrial');
 
