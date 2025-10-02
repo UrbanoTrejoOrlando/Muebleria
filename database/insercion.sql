@@ -1,4 +1,3 @@
-INSERT INTO marcas (nombre) VALUES ('Minimalismo Funcional');
 INSERT INTO marcas (nombre) VALUES ('Arte en Madera');
 INSERT INTO marcas (nombre) VALUES ('Innovación Urbana');
 INSERT INTO marcas (nombre) VALUES ('Diseños Contemporáneos');
