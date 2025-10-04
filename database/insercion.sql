@@ -1,4 +1,3 @@
-
 ---- Tabla Materiales ------
 INSERT INTO materiales (nombre) VALUES ('Madera');
 INSERT INTO materiales (nombre) VALUES ('Metal');
