@@ -1,4 +1,3 @@
-INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('2345678901234', 'Mesa de metal', 'Mesa rectangular de metal resistente, diseño moderno.', 150.00, 50, 5, 100, 2, 2, 2);
 
 -- Producto 3
