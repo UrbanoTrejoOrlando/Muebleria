@@ -1,4 +1,3 @@
--- Producto 8
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('8901234567890', 'Mesa de jardín', 'Mesa redonda para jardín en aluminio resistente a la intemperie.', 180.00, 15, 2, 30, 8, 8, 6);
 
