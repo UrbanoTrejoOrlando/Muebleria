@@ -1,4 +1,3 @@
--- Producto 7
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('7890123456789', 'Estantería de acero', 'Estantería modular en acero inoxidable, adaptable a cualquier espacio.', 120.00, 40, 5, 100, 7, 7, 5);
 
