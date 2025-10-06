@@ -1,4 +1,3 @@
-INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
 VALUES ('6789012345678', 'Escritorio moderno', 'Escritorio minimalista en madera y metal, perfecto para oficinas.', 200.00, 35, 5, 80, 6, 6, 2);
 
 -- Producto 7
