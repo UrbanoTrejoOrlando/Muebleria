@@ -1,4 +1,3 @@
-VALUES ('4567890123456', 'Cama de madera', 'Cama matrimonial en madera de roble, robusta y duradera.', 400.00, 20, 2, 40, 1, 4, 4);
 
 -- Producto 5
 INSERT INTO productos (codigo_barras, nombre, descripcion, precio, stock, stock_minimo, stock_maximo, marca_id, categoria_id, color_id)
